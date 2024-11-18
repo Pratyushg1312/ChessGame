@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  border: 2px solid black;
+
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.square:nth-child(even) {
+  background-color: #f0d9b5;
+}
+
+.square:nth-child(odd) {
+  background-color: #b58863;
+}
+
+.selected {
+  outline: 3px solid red;
+}
